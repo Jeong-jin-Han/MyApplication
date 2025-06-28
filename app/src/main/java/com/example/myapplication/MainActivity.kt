@@ -20,8 +20,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+//                    Greeting(
+//                        name = "Android",
+//                        modifier = Modifier.padding(innerPadding)
+//                    )
                     Greeting(
-                        name = "Android",
+                        name = "World",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -43,5 +47,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     MyApplicationTheme {
         Greeting("Android")
+//        Greeting("World")
     }
 }
